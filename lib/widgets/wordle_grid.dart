@@ -30,11 +30,9 @@ class WordleGrid extends ConsumerWidget {
         attempted: attempted,
       ));
     }
-    return Container(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: rows,
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: rows,
     );
   }
 }

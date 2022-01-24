@@ -27,7 +27,7 @@ class GameState {
     return GameState(
         validWords: validWords ?? this.validWords,
         correctWord: correctWord ?? this.correctWord,
-        settings: this.settings,
+        settings: settings,
         attempted: attempted ?? this.attempted,
         attempts: attempts ?? this.attempts);
   }

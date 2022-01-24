@@ -40,12 +40,12 @@ class WordleLetterbox extends StatelessWidget {
       width: 60,
       height: 60,
       alignment: Alignment.center,
-      padding: EdgeInsets.all(10),
-      margin: EdgeInsets.all(2),
+      padding: const EdgeInsets.all(10),
+      margin: const EdgeInsets.all(2),
       decoration: BoxDecoration(
           border: getBorder(),
           color: getBgColor(),
-          borderRadius: BorderRadius.all(Radius.circular(4))),
+          borderRadius: const BorderRadius.all(Radius.circular(4))),
       child: Text(
         letter.toUpperCase(),
         style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: getTextColor()),

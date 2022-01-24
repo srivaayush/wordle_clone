@@ -7,21 +7,19 @@ class WordleTitleBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          WordAttemptsToggle(),
-          Text(
-            "WORDLE",
-            style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold
-            ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: const [
+        WordAttemptsToggle(),
+        Text(
+          "WORDLE",
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold
           ),
-          WordSizeToggle()
-        ],
-      ),
+        ),
+        WordSizeToggle()
+      ],
     );
   }
 }
@@ -50,7 +48,7 @@ class WordSizeToggle extends ConsumerWidget {
         child: Text(gameSettings.wordsize.toString()),
         onPressed: _updateWordSize,
       ),
-      margin: EdgeInsets.fromLTRB(40, 0, 0, 0),
+      margin: const EdgeInsets.fromLTRB(40, 0, 0, 0),
     );
   }
 }
@@ -84,7 +82,7 @@ class WordAttemptsToggle extends ConsumerWidget {
         child: Text(text),
         onPressed: _updateAttempts,
       ),
-      margin: EdgeInsets.fromLTRB(0, 0, 40, 0),
+      margin: const EdgeInsets.fromLTRB(0, 0, 40, 0),
     );
   }
 }
